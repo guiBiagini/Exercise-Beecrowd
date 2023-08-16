@@ -11,28 +11,30 @@ public class App {
         String animal = "vazio";
         scanner.close();
 
-        if (nivel1 == "vertebrado") {
-            if (nivel2 == "ave")
-                if (nivel3 == "carnivo")
+        if (nivel1.contentEquals("vertebrado")) {
+            if (nivel2.contentEquals("ave")) {
+                if (nivel3.contentEquals("carnivoro"))
                     animal = "aguia";
-                else if (nivel3 == "onivoro")
+                else if (nivel3.contentEquals("onivoro"))
                     animal = "pomba";
-                else if (nivel2 == "mamifero")
-                    if (nivel3 == "onivoro")
-                        animal = "homem";
-                    else if (nivel3 == "herbivoro")
-                        animal = "vaca";
-        } else {
-            if (nivel2 == "inseto")
-                if (nivel3 == "hematofago")
+            } else if (nivel2.contentEquals("mamifero")) {
+                if (nivel3.contentEquals("onivoro"))
+                    animal = "homem";
+                else if (nivel3.contentEquals("herbivoro"))
+                    animal = "vaca";
+            }
+        } else if (nivel1.contentEquals("invertebrado")) {
+            if (nivel2.contentEquals("inseto")) {
+                if (nivel3.contentEquals("hematofago"))
                     animal = "pulga";
-                else if (nivel3 == "herbivoro")
-                    animal = "largata";
-                else if (nivel2 == "anelideo")
-                    if (nivel3 == "hematofago")
-                        animal = "sanguessuga";
-                    else if (nivel3 == "onivoro")
-                        animal = "minhoca";
+                else if (nivel3.contentEquals("herbivoro"))
+                    animal = "lagarta";
+            } else if (nivel2.contentEquals("anelideo")) {
+                if (nivel3.contentEquals("hematofago"))
+                    animal = "sanguessuga";
+                else if (nivel3.contentEquals("onivoro"))
+                    animal = "minhoca";
+            }
         }
         System.out.println(animal);
     }
