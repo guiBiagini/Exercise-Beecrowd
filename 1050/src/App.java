@@ -6,10 +6,9 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         int[] dddArray = { 61, 71, 11, 21, 32, 19, 27, 31 };
-        String[] cityArray = { "Brasília", "Salvador", "São Paulo", "Rio de Janeiro", "Juiz de Fora", "Campinas",
-                "Vitória", "Belo Horizonte" };
+        String[] cityArray = { "Brasilia", "Salvador", "Sao Paulo", "Rio de Janeiro", "Juiz de Fora", "Campinas",
+                "Vitoria", "Belo Horizonte" };
 
-        System.out.print("Digite o código DDD: ");
         int ddd = scanner.nextInt();
         scanner.close();
 
