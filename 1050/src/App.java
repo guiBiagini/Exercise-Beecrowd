@@ -12,7 +12,7 @@ public class App {
         int ddd = scanner.nextInt();
         scanner.close();
 
-        String city = "DDD não cadastrado";
+        String city = "DDD nao cadastrado";
 
         for (int i = 0; i < dddArray.length; i++) {
             if (dddArray[i] == ddd) {
