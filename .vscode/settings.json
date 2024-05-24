@@ -3,5 +3,8 @@
         "Inicio",
         "minuto",
         "Minutos"
-    ]
+    ],
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
 }
